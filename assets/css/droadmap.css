@@ -59,12 +59,28 @@ main p {
 }
 
 .course-card img {
-    height: 200px;
+    width: 350px;
     max-width: 350px;
     object-fit: cover;
     padding: 5px;
     border-radius: 15px;
 }
+
+@media (max-width: 1000px) {
+
+    .course-card {
+        flex-direction: column;
+    }
+
+    .course-card img {
+        width: 150vh;
+        max-width: 115vh;
+        height: 40vh;
+    }
+}
+
+
+
 
 .course-card:hover {
     background-color: #f9f9f9;
